@@ -1,0 +1,8 @@
+2020-03-23 18:30:01, Thread-2    , INFO , 127.0.0.1 - - [23/Mar/2020 18:30:01] "[35m[1mGET /errors HTTP/1.1[0m" 500 -
+2020-03-23 18:30:01, Thread-3    , INFO , 127.0.0.1 - - [23/Mar/2020 18:30:01] "[37mGET /errors?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2020-03-23 18:30:01, Thread-4    , INFO , 127.0.0.1 - - [23/Mar/2020 18:30:01] "[37mGET /errors?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2020-03-23 18:30:01, Thread-5    , INFO , 127.0.0.1 - - [23/Mar/2020 18:30:01] "[37mGET /errors?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2020-03-23 18:30:01, Thread-6    , INFO , 127.0.0.1 - - [23/Mar/2020 18:30:01] "[37mGET /errors?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-03-23 18:30:01, Thread-7    , INFO , 127.0.0.1 - - [23/Mar/2020 18:30:01] "[37mGET /errors?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+2020-03-23 18:30:01, Thread-8    , INFO , 127.0.0.1 - - [23/Mar/2020 18:30:01] "[37mGET /errors?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2020-03-23 18:30:06, MainThread  , INFO ,  * Detected change in '/Users/buitrab/Desktop/python-api-2/api.py', reloading

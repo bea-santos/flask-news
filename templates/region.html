@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask News</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css2/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css2/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css2/templatemo-style.css') }}">
+
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-2.0.0.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-2.0.0.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-tables-2.0.0.min.js"></script>
+    
+    {{ script2|safe }}
+
+</head>
+
+<body id="reportsPage">
+    <div class="" id="home">
+        <nav class="navbar navbar-expand-xl">
+
+            <div class="container h-100">
+                <a class="navbar-brand" href="/">
+                    <h1 class="tm-site-title mb-0">Flask News Dashboard</h1>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto h-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/region">
+                                Region
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/errors">
+                                Errors
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-white mt-5 mb-5"> </p>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row tm-content-row">
+
+                 
+
+                <div class="col-12 col-sm-12 col-md-12 tm-block-col">
+                        <div class="tm-bg-primary-dark tm-block tm-block-taller" >
+                            <h2 class="tm-block-title">Interest by region</h2>
+                            <center> <div class= "bokeh" >{{ div2|safe }}</div> </center>
+                        </div>
+                </div> 
+
+               
+
+            </div>
+        </div>
+
+        <footer class="tm-footer row tm-mt-small">
+            <div class="col-12 font-weight-light">
+                <p class="text-center text-white mb-0 px-4 small">
+                    Design: <a rel="nofollow noopener" href="https://templatemo.com" class="tm-footer-link">Beatriz Santos</a>                    
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
